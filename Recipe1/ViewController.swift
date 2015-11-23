@@ -44,6 +44,8 @@ class ViewController: UITableViewController {
             cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.2)
             cell.textLabel?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.0)
         }
+        
+        cell.textLabel?.textColor = UIColor.whiteColor()
         cell.textLabel?.text = array[indexPath.item]
         
         return cell
