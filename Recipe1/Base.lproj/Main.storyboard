@@ -14,8 +14,33 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customcell" id="v7W-Tq-tjG">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v7W-Tq-tjG" id="DTK-CR-eam">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <segue destination="4GS-GP-8JS" kind="show" id="cY6-0S-hB6"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BYZ-38-t0r" id="PAQ-pN-g7s"/>
+                            <outlet property="delegate" destination="BYZ-38-t0r" id="RmD-X8-E4x"/>
+                        </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="ahh-aF-5Z2"/>
+                    <navigationItem key="navigationItem" id="ahh-aF-5Z2">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ICd-Db-VFj">
+                            <connections>
+                                <segue destination="Pvg-JS-3Ma" kind="show" id="YOd-XH-60e"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -33,6 +58,12 @@
                     <view key="view" contentMode="scaleToFill" id="BOU-0c-4sD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="honeycomb" translatesAutoresizingMaskIntoConstraints="NO" id="9er-0f-qwA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -40,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mRK-I3-ICc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1065.5" y="1212.5"/>
+            <point key="canvasLocation" x="1065.5" y="1166.5"/>
         </scene>
         <!--AddView-->
         <scene sceneID="JGg-6n-SFr">
@@ -53,6 +84,12 @@
                     <view key="view" contentMode="scaleToFill" id="rot-ha-hCD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="strawberries" translatesAutoresizingMaskIntoConstraints="NO" id="CFV-Na-305">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -60,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qXD-Ix-nCJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1636.5" y="389.5"/>
+            <point key="canvasLocation" x="1516.5" y="389.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6qj-KL-qQV">
@@ -82,4 +119,8 @@
             <point key="canvasLocation" x="437" y="390"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="honeycomb" width="750" height="1334"/>
+        <image name="strawberries" width="750" height="1334"/>
+    </resources>
 </document>
