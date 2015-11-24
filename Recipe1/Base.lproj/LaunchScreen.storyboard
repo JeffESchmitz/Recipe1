@@ -22,7 +22,7 @@
                                 <animations/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfC-2X-xxp">
-                                <rect key="frame" x="160" y="256.5" width="280.5" height="87.5"/>
+                                <rect key="frame" x="160" y="257" width="281" height="87"/>
                                 <animations/>
                                 <string key="text">World 
 Renowned Recipes</string>
