@@ -50,7 +50,7 @@
         <!--DetailView-->
         <scene sceneID="sSu-FL-zzK">
             <objects>
-                <viewController title="DetailView" id="4GS-GP-8JS" sceneMemberID="viewController">
+                <viewController title="DetailView" id="4GS-GP-8JS" customClass="DetailViewController" customModule="Recipe1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xeT-MR-h1m"/>
                         <viewControllerLayoutGuide type="bottom" id="Cv7-mT-LOv"/>
@@ -68,6 +68,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -76,6 +77,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="recipeContent" destination="oPK-rz-qdg" id="qhx-C5-1dK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mRK-I3-ICc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,7 +88,7 @@
         <!--AddView-->
         <scene sceneID="JGg-6n-SFr">
             <objects>
-                <viewController title="AddView" id="Pvg-JS-3Ma" sceneMemberID="viewController">
+                <viewController title="AddView" id="Pvg-JS-3Ma" customClass="AddViewController" customModule="Recipe1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7OV-PR-g4J"/>
                         <viewControllerLayoutGuide type="bottom" id="61h-UR-o5q"/>
@@ -107,6 +111,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w36-i6-eBL">
                                 <rect key="frame" x="0.0" y="101" width="375" height="30"/>
                                 <animations/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -115,6 +120,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -139,6 +145,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="recipeContent" destination="4tR-aF-IxC" id="r15-KQ-wbp"/>
+                        <outlet property="titleText" destination="w36-i6-eBL" id="vfu-GZ-hAA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qXD-Ix-nCJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
